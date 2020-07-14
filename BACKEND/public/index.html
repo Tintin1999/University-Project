@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("/image/5f0c406895f6e61ce03f6ae1");
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="/register/student"
+      method="POST"
+      enctype="multipart/form-data"
+      onsubmit="logdata"
+    >
+      <label for="username_input">Username :</label>
+      <input type="text" name="username" id="username_input" />
+      <br />
+      <label for="email_input">Email :</label>
+      <input type="email" name="email" id="email_input" />
+      <br />
+      <label for="dob_input">DOB :</label>
+      <input type="date" name="dateofbirth" id="dob_input" />
+      <br />
+      <label for="name_input">Name :</label>
+      <input type="text" name="name" id="name_input" />
+      <br />
+      <label for="city_input">City :</label>
+      <input type="text" name="city" id="city_input" />
+      <br />
+      <label for="pin_input">Pin :</label>
+      <input type="number" name="pin" id="pin_input" />
+      <br />
+      <label for="country_input">Country :</label>
+      <input type="text" name="country" id="country_input" />
+      <br />
+      <label for="sex_input">Sex :</label>
+      <input type="text" name="sex" id="sex_input" />
+      <br />
+      <label for="phone_input">City :</label>
+      <input type="text" name="phone" id="phone_input" />
+      <br />
+      <input type="file" name="avatar" />
+
+      <input type="submit" />
+    </form>
+
+    <script>
+      function logdata(event) {
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>
