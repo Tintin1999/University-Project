@@ -10,31 +10,15 @@ require("./database/mongoose");
 const app = express();
 
 //Import Routes
-//  ||
-//  \/
-//Home Route
 const homeRoute = require("./routes/home/home_route");
-const studentRoute = require("./routes/student/student");
-const teacherRouter = require("./routes/teacher/teacher");
-
-
-//Middleware
-// app.use(bodyParser.urlencoded({ extended: true }));
-
-// parse application/json
-// app.use(bodyParser.json());
+const userRoute = require("./routes/user/user");
 
 //express JSON
 app.use(express.json());
 
 //user Routes
 app.use(homeRoute);
-app.use(studentRoute);
-app.use(teacherRouter);
-
-// app.get("/", (req, res ) => {
-//     req.query
-// });
+app.use(userRoute);
 
 //Listen Route
 app.listen(process.env.PORT, () => {
