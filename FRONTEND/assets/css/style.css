@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #592b02;
+}
+
+/* main wrapper start */
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .main-wrapper {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px #421f00;
+    height: calc(100% - 80px);
+    width: calc(100% - 100px);
+  }
+  .right-section {
+  }
+  .right-col {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .left-section {
+  }
+  .left-col {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+
+/* demo div */
+.demo-div {
+  height: 300px;
+  width: 300px;
+}
+
+/* right section */
+.right-section {
+}
+.right-col {
+  background-color: #f2f2f2;
+}
+.login-avatar {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  color: #5d5c5c;
+}
+.icon-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.icon-format {
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+}
+.icon-inner {
+  height: 40px;
+  width: 40px;
+  background-color: #5d5c5c;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+/* form */
+
+/* left section */
+.left-section {
+}
+.left-col {
+  background-color: #f2ab27;
+}
+
+/* genaral styles */
+
+.rm-padding {
+  padding: 0;
+}
+
+.rm-margin {
+  margin: 0;
+}
+
+.adpt-height {
+  height: 100%;
+}
+
+.adpt-width {
+  width: 100%;
+}
